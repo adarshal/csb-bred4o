@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <!-- bootstrap -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <!-- local css -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- fontawsome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg background-purple">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light" href="#"><i class="fa-solid fa-music"></i></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active text-light" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active text-light" href="#">Favorites</a>
+            </li>
+
+          </ul>
+          <div class="nav-left d-flex me-2">
+            <div class="collapse navbar-collapse me-2 mt-2" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 me-2 ">
+                <li class="nav-item">
+                  <form class="d-flex search-bar" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-light me-2 " type="submit">Search</button>
+                  </form>
+                </li>
+                <li class="nav-item m-2 text-light"><i class="fa-solid fa-bell"></i>
+                <li>
+                <li class="nav-item  m-2">
+                  <div class="profile-container">
+                    <!-- profile -->
+                    <div class="btn-group dropstart mt-n1">
+                      <button class="btn dropdown-toggle p-0 bt-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="resources/images/lady2-img.jpg" alt="profile-img">
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Setting</a></li>
+                        <li><a class="dropdown-item" href="#">Connect device</a></li>
+                        <li><a class="dropdown-item" href="#">About</a></li>
+                      </ul>
+                    </div>
+
+                  </div>
+                  <!-- <img src="resources/images/lady2-img.jpg" alt="profile-img" > -->
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- <main>
+
+  </main> -->
+  <!-- Aside section -->
+  <aside class="">
+    <div>
+      <div class="queue-head d-flex">
+
+
+        <h2 class="text-light d-flex pe-5 me-5"> Queue</h2>
+        <div class="dropdown d-flex">
+          <a class="btn  dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:cyan;">
+            Queue
+          </a>
+
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Playlist</a></li>
+            <li><a class="dropdown-item" href="#">Favorites</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="queue">
+        <ol class="p-3 m-1 text-light queue-list">
+          <li><img src="resources/images/new-skin.avif" alt="song-name">mArathi song <i class="fa-regular fa-heart d-flex "></i></li>
+          <li><img src="resources/images/beatles.jfif" alt="song-name"> yesterday<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/the-beatles.webp" alt="song-name"> hey Jude <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/cloud.jpg" alt="song-name"> cloud<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/m1.jpg" alt="song-name"> music 1<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/mirage.png" alt="song-name">mirage <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/song10.jpg" alt="song-name">song 10<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/sphere.jpg" alt="song-name">sphere <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/sunrise.webp" alt="song-name">sunrise<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/new-skin.avif" alt="song-name">mArathi song <i class="fa-regular fa-heart d-flex "></i></li>
+          <li><img src="resources/images/beatles.jfif" alt="song-name"> yesterday<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/the-beatles.webp" alt="song-name"> hey Jude <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/cloud.jpg" alt="song-name"> cloud<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/m1.jpg" alt="song-name"> music 1<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/mirage.png" alt="song-name">mirage <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/song10.jpg" alt="song-name">song 10<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/sphere.jpg" alt="song-name">sphere <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/sunrise.webp" alt="song-name">sunrise<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/new-skin.avif" alt="song-name">mArathi song <i class="fa-regular fa-heart d-flex "></i></li>
+          <li><img src="resources/images/beatles.jfif" alt="song-name"> yesterday<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/the-beatles.webp" alt="song-name"> hey Jude <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/cloud.jpg" alt="song-name"> cloud<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/m1.jpg" alt="song-name"> music 1<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/mirage.png" alt="song-name">mirage <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/song10.jpg" alt="song-name">song 10<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/sphere.jpg" alt="song-name">sphere <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/sunrise.webp" alt="song-name">sunrise<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/new-skin.avif" alt="song-name">mArathi song <i class="fa-regular fa-heart d-flex "></i></li>
+          <li><img src="resources/images/beatles.jfif" alt="song-name"> yesterday<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/the-beatles.webp" alt="song-name"> hey Jude <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/cloud.jpg" alt="song-name"> cloud<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/m1.jpg" alt="song-name"> music 1<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/mirage.png" alt="song-name">mirage <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/song10.jpg" alt="song-name">song 10<i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/sphere.jpg" alt="song-name">sphere <i class="fa-regular fa-heart d-flex"></i></li>
+          <li><img src="resources/images/sunrise.webp" alt="song-name">sunrise<i class="fa-regular fa-heart d-flex"></i></li>
+
+
+        </ol>
+  </aside>
+
+  <!-- main sectio -->
+  <main>
+    <div class="top-genere-sugestion">
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-70 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('resources/images/hiphop.jpg'); background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Hip-Hop, long jacket</h2>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-70 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('resources/images/jazzbg.webp'); background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">JAZZ for open minds</h2>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-70 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('resources/images/edm.webp'); background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">EDM , be free soul</h2>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+    <!-- All lastes release with menus -->
+    <div class="latest-release text-light">
+      <div class="latest-release-heading ">
+        <h3 class="text-light">Latest release</h3>
+      </div>
+      <div class="container ">
+        <div class="row my-3">
+          <div class="col-12 col-md-6">
+            <div class="d-inline-block text-start me-3">
+              <img src="resources/images/sphere.jpg" alt="song-thumbnail">
+            </div>
+            <div class="d-inline-block song-name text-center">
+              Sphere
+            </div>
+            <div class="d-inline-block latest-release-dropdown text-end ms-3">
+              <div class="dropdown">
+                <a class="btn  b-0 latest-release-button btn-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:cyan;">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#music-player">Play Now</a></li>
+                  <li><a class="dropdown-item" href="#">Add to queue</a></li>
+                  <li><a class="dropdown-item" href="#">Add to Favorites</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-inline-block text-start me-3">
+              <img src="resources/images/sphere.jpg" alt="song-thumbnail">
+            </div>
+            <div class="d-inline-block song-name text-center">
+              Sphere
+            </div>
+            <div class="d-inline-block latest-release-dropdown text-end ms-3">
+              <div class="dropdown">
+                <a class="btn  b-0 latest-release-button btn-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:cyan;">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#music-player">Play Now</a></li>
+                  <li><a class="dropdown-item" href="#">Add to queue</a></li>
+                  <li><a class="dropdown-item" href="#">Add to Favorites</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <div class="row my-3">
+          <div class="col-12 col-md-6">
+            <div class="d-inline-block text-start me-3">
+              <img src="resources/images/sphere.jpg" alt="song-thumbnail">
+            </div>
+            <div class="d-inline-block song-name text-center">
+              Sphere
+            </div>
+            <div class="d-inline-block latest-release-dropdown text-end ms-3">
+              <div class="dropdown">
+                <a class="btn  b-0 latest-release-button btn-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:cyan;">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#music-player">Play Now</a></li>
+                  <li><a class="dropdown-item" href="#">Add to queue</a></li>
+                  <li><a class="dropdown-item" href="#">Add to Favorites</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="d-inline-block text-start me-3">
+              <img src="resources/images/sphere.jpg" alt="song-thumbnail">
+            </div>
+            <div class="d-inline-block song-name text-center">
+              Sphere
+            </div>
+            <div class="d-inline-block latest-release-dropdown text-end ms-3">
+              <div class="dropdown">
+                <a class="btn  b-0 latest-release-button btn-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color:cyan;">
+                  <i class="fa-solid fa-ellipsis-vertical"></i>
+                </a>
+
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#music-player">Play Now</a></li>
+                  <li><a class="dropdown-item" href="#">Add to queue</a></li>
+                  <li><a class="dropdown-item" href="#">Add to Favorites</a></li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- popular artist section -->
+    <div class="popular-artist text-light">
+      <div class="popular-artist-heading ">
+        <h3 class="text-light">Popular Artist</h3>
+      </div>
+      <div class="container ">
+        <div class="popular-artist-photo">
+<!-- artsist with offcanvas info playlist songs -->
+
+          <div class="container testimonial-group">
+            <div class="row text-center">
+              <div class="col-xs-4 col-md-2 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+
+
+
+                    <img src="resources/images/artist/artist1.png" alt="artist"></a>
+                </div>
+                <div class="artist-name">
+
+                  artist1
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-4 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="resources/images/artist/artist2.jpg" alt="artist"> </a>
+                </div>
+                <div class="artist-name">
+                  artist1
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-4 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="resources/images/artist/coldplay.jpg" alt="artist"> </a>
+                </div>
+                <div class="artist-name">
+                  artist1
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-4 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="resources/images/artist/coldplay2.webp" alt="artist"> </a>
+                </div>
+                <div class="artist-name">
+                  artist1
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-4 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="resources/images/artist/eminem.webp" alt="artist"> </a>
+                </div>
+                <div class="artist-name">
+                  artist1
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-4 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="resources/images/artist/kumar.jpg" alt="artist"> </a>
+                </div>
+                <div class="artist-name">
+                  artist1
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-4 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="resources/images/artist/maroon5.jpg" alt="artist"> <a>
+                </div>
+                <div class="artist-name">
+                  artist1
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-4 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="resources/images/artist/one-direction.jpg" alt="artist"></a>
+                </div>
+                <div class="artist-name">
+                  artist1
+                </div>
+              </div>
+
+              <div class="col-xs-4 col-md-4 scroll-artist">
+                <div class="single-artist-container">
+                  <a class="btn " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <img src="resources/images/artist/shreya.jpg" alt="artist">
+                  </a>
+                </div>
+                <div class="artist-name">
+                  artist1
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+<!-- /// offcanvas for popular artist -->
+    <div class="offcanvas offcanvas-start artist-offcanvas " tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">Artist-1</h5>
+        <button type="button" class="btn-close bg-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+        Artist1 is very popular. This singer created first album in 2010.With a lyrical sensitivity to her instrumental compositions, her music draws listeners in with subtlety and introspective levity. Bringing a distinctive angle to her jazz-informed arranging, she creates nuanced space for improvisation and discovery…’-
+
+        </div>
+        <div class="dropdown mt-3">
+          <button class="btn btn-danger dropdown-toggle" type="button" data-bs-toggle="dropdown">
+            <i class="fa-regular fa-heart "></i>
+          </button>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Add Artist to Favorites</a></li>
+            <li><a class="dropdown-item" href="#">Add all songs to queue</a></li>
+          </ul>
+<ol>
+  <li><img src="resources/images/the-beatles.webp" alt="song-name"> song1 </li>
+  <li><img src="resources/images/cloud.jpg" alt="song-name"> cloud</li>
+  <li><img src="resources/images/m1.jpg" alt="song-name"> music 1</li>
+  <li><img src="resources/images/mirage.png" alt="song-name">mirage  </li>
+  <li><img src="resources/images/song10.jpg" alt="song-name"> f song 10 </li>
+  <li><img src="resources/images/sphere.jpg" alt="song-name"> fe sphere  </li>
+  <li><img src="resources/images/sunrise.webp" alt="song-name">fur sag </li>
+  <li><img src="resources/images/new-skin.avif" alt="song-name">for song < </li>
+  <li><img src="resources/images/beatles.jfif" alt="song-name"> yesterday </li>
+  <li><img src="resources/images/the-beatles.webp" alt="song-name"> hey Jude  </li>
+  <li><img src="resources/images/cloud.jpg" alt="song-name"> cloud </li>
+  <li><img src="resources/images/m1.jpg" alt="song-name"> music 1 </li>
+</ol>
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- song by thems likw party, roadtrip -->
+    <!-- <div class="song-theme-container p-3 m-2">
+<div class="row">
+  <div class="col-12 col-md-4">
+<img src="resources/images/roadtrip.jpg" alt="">
+
+    </div>
+  </div>
+</div> -->
+
+    <div class="song-theme-container ">
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-55 overflow-hidden text-white bg-dark rounded-1 shadow-lg" style="background-image: url('resources/images/roadtrip.jpg'); background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Roadtrip</h2>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-55 overflow-hidden text-white bg-dark rounded-1 shadow-lg" style="background-image: url('resources/images/electronic.jpg'); background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Electronic</h2>
+
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-55 overflow-hidden text-white bg-dark rounded-1 shadow-lg" style="background-image: url('resources/images/party.jpg'); background-size: cover;">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Party</h2>
+
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+    <!-- songs by language -->
+    <div class="latest-by-language">
+
+
+      <div class="latest-english m-2 p-2">
+        <div class="latest-language-heading ">
+          <h3 class="text-light">Latest English</h3>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/song10.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/jazz.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/m1.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/song10.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/jazz.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/song10.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="latest-hindi m-2 p-2">
+        <div class="latest-language-heading ">
+          <h3 class="text-light">Latest Hindi</h3>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/hindi.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/m1.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/jazz.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/hindi.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/m1.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/country.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="latest-marathi m-2 p-2">
+        <div class="latest-language-heading ">
+          <h3 class="text-light">Latest Marathi</h3>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/marathi.jfif" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/country.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/song10.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/m1.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/marathi.jfif" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/jazz.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="latest-hindi m-2 p-2">
+        <div class="latest-language-heading ">
+          <h3 class="text-light">Latest Punjabi</h3>
+        </div>
+        <div class="row">
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/hindi.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/m1.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/piano.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/hindi.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/m1.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+          <div class="col-4 col-md-2">
+            <div class="">
+              <img src="resources/images/country.jpg" alt="song-img">
+            </div>
+            <div class="text-light">
+              Song10
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+  </main>
+
+  <!-- music player -->
+  <div id="music-player" class="rounded-5">
+    <div class="row">
+      <div class="col-xs-9 col-md-3 d-inline-block text music-player-song-name">
+        <img src="resources/images/sphere.jpg" alt="song-img">
+        SPHERE by artist1
+      </div>
+      <div class="col-xs-1 col-md-1 d-inline-block mt-3 text-center music-player-emoji">
+        <i class="fa-regular fa-heart "></i>
+        <i class="fa-solid fa-circle-info"></i>
+      </div>
+      <div class="col-sm-12 col-md-5  d-inline-block music-player-bar mt-2">
+        <audio controls>
+
+          <source src="resources/audio/music.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <div class="col-sm-1 col-md-2 d-inline-block mt-3 p-2s text-light right-side ">
+
+        <i class="fa-solid fa-headphones p-2 "></i>
+
+        <i class="fa-solid fa-sliders p-2"></i>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- </div> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

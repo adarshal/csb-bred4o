@@ -1,0 +1,258 @@
+body {
+  /* background-color: #d0f7df; */
+  background-color: #0c1027;
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Ubuntu', sans-serif; */
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+/* // bootstrap css modified */
+.mt-n1 {
+  margin-top: -0.25rem !important;
+}
+
+/* bootstrap modified till above */
+:root {
+  --bg-purple: #0c1027;
+}
+
+.background-purple {
+  background-color: var(--bg-purple);
+  /* color: white; */
+}
+
+/* &::-webkit-media-controls-enclosure {
+    border-radius: 5px;
+    background-color: green;
+} */
+header {}
+
+.nav-left {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* search-bar button:hover{
+color: green;
+background-color: red;
+} */
+.profile-container {
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.profile-container img {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%
+}
+
+/* Aside section */
+aside {
+  /* background-color: green; */
+  /* height:100px; */
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 3%;
+  width: 25%;
+}
+
+aside img {
+  height: 2rem;
+  width: 2rem;
+}
+
+.queue-list li {
+  margin: 1%;
+  padding: 5%;
+}
+
+.queue-list li i {
+  margin-right: 1%;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-top: -10%;
+}
+
+main {
+  width: 70%;
+  /* background-color: red; */
+  /* height:100px; */
+  display: inline-block;
+}
+
+.top-genere-sugestion .card {
+  /* font-family: Papyrus, fantasy; */
+  font-family: sans-serif;
+  transition: all 0.5s ease-out;
+}
+
+.top-genere-sugestion .card:hover {
+  transform: scale(1.1);
+}
+
+/* latest releases  */
+.latest-release img {
+  height: 5rem;
+  width: 5rem;
+}
+
+/* .latest-release .dropdown:active {} */
+.latest-release-dropdown {
+  float: right;
+  margin-right: 2rem;
+  /* background-color: red; */
+}
+
+/* // popular artist */
+.testimonial-group>.row {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.testimonial-group>.row>.scroll-artist {
+  display: inline-block;
+}
+
+.scroll-artist img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+
+.testimonial-group::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.artist-offcanvas {
+  background-color: #0c1027;
+  color: white;
+}
+
+.artist-offcanvas img {
+  height: 5rem;
+  width: 5rem;
+}
+
+.artist-offcanvas li {
+  padding: 2%;
+}
+
+/* song themes */
+.song-theme-container img {}
+
+.song-theme-container .col {
+  font-family: Papyrus;
+  transition: all 0.5s ease-in-out;
+}
+
+.song-theme-container .col:hover {
+  /* -webkit-transform: scale(1.0) rotate(2deg); */
+  transform: scale(1.01) skew(2deg, 2deg);
+}
+
+/* .song-theme-container {
+
+} */
+/* songs by language */
+.latest-by-language img {
+  height: 7rem;
+  width: 7rem;
+}
+
+.latest-language-heading {
+  font-family: Montserrat, sans-serif, serif;
+}
+
+/* music player */
+#music-player {
+  /* height: 0; */
+  position: sticky;
+  border: 2%;
+  padding-right: 5%;
+  padding-left: 5%;
+  bottom: 1%;
+  background: rgb(63, 238, 198);
+  background: linear-gradient(90deg, rgba(63, 238, 198, 0.8604575619310224) 24%, rgba(0, 104, 237, 1) 85%);
+}
+
+@media only screen and (max-width: 600px) {
+  .music-player-song-name {
+    width: 50%;
+    display: inline-block;
+  }
+
+  .music-player-emoji {
+    width: 50%;
+    display: inline-block;
+  }
+}
+
+#music-player {
+  /* height: 0px; */
+  visibility: hidden;
+}
+
+#music-player:target {
+  /* height: auto; */
+  visibility: visible;
+}
+
+#music-player img {
+  height: 4rem;
+  width: 4rem;
+}
+
+.music-player-bar audio {
+  width: 30rem;
+}
+
+#music-player audio::-webkit-media-controls-panel {
+  background-color: #29A19C;
+  /* border-style: none; */
+}
+
+#music-player audio::-webkit-media-controls-volume-slider {
+  background-color: #d429f2;
+  border-radius: 25px;
+  padding-left: 8px;
+  padding-right: 8px;
+  /* margin-right: -12rem; */
+}
+
+#music-player audio::-webkit-media-controls-mute-button {
+  background-color: #52a6eb;
+  border-radius: 50%;
+}
+
+#music-player audio::-webkit-media-controls-play-button {
+  background-color: #52a6eb;
+  border-radius: 50%;
+}
+
+#music-player audio::-webkit-media-controls-current-time-display {
+  /* color: #352D4D; */
+}
+
+#music-player audio::-webkit-media-controls-timeline {
+  /* background-color: #8e6cd4; */
+  border: 1px dashed black;
+  border-radius: 25px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#music-player .right-side {
+  transition: all 1s ease-in-out 1s;
+}
+
+#music-player .right-side i:hover {
+  transform: scale(1.2);
+}
+
+@media only screen and (max-width: 600px) {
+  .right-side i {
+    padding-left: 35%;
+  }
